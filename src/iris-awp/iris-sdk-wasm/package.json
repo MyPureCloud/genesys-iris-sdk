@@ -1,0 +1,26 @@
+{
+  "name": "iris-sdk-wasm",
+  "version": "3.1.9",
+  "description": "iris-sdk wasm bindings",
+  "homepage": "https://iris.audio",
+  "author": {
+    "name": "Iris Audio Technologies Ltd",
+    "email": "sdk@iris.audio"
+  },
+  "license": "https://sdk.iris.audio/license.txt",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "files": [
+    "license.txt",
+    "index.d.ts",
+    "index.js",
+    "iris-sdk-wasm.mjs",
+    "iris-sdk-wasm.wasm",
+    "iris-sdk.d.ts",
+    "iris-sdk.js"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  }
+}
