@@ -13,16 +13,6 @@
   "bugs": {
     "url": "https://github.com/author/library/issues"
   },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.mts",
-      "import": "./dist/index.mjs"
-    },
-    "./iris-awp.js": "./dist/iris-awp.js",
-    "./iris-sdk-wasm.wasm": "./dist/iris-sdk-wasm.wasm",
-    "./package.json": "./package.json"
-  },
-  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
@@ -47,5 +37,14 @@
   },
   "peerDependencies": {
     "genesys-cloud-webrtc-sdk": "^13.1.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json",
+    "./iris-awp.js": "./dist/iris-awp.js",
+    "./iris-sdk-wasm.wasm": "./dist/iris-sdk-wasm.wasm"
   }
 }

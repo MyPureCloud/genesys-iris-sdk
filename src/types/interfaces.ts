@@ -29,7 +29,7 @@ export interface IGenesysIrisConfig {
  */
 export interface IIrisLibraryDefaults {
   readonly audioWorkletPath: string;
-  readonly model: 'clarity';
+  readonly model: 'wilson';
   readonly wasmPath: string;
 }
 
@@ -53,5 +53,5 @@ export interface IIrisConfig
 export const IRIS_LIBRARY_DEFAULTS: IIrisLibraryDefaults = {
   audioWorkletPath: new URL('./iris-awp.js', import.meta.url).href,
   wasmPath: new URL('./iris-sdk-wasm.wasm', import.meta.url).href,
-  model: 'clarity',
+  model: 'wilson',
 };
