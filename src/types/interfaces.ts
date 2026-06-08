@@ -21,6 +21,19 @@ export interface IGenesysIrisConfig {
   audioWorkletPath?: string;
   /** Optional override for the iris-sdk WASM URL. See `audioWorkletPath`. */
   wasmPath?: string;
+
+  /**
+   * Optional IRIS engine tuning. These are forwarded to the underlying
+   * `IrisWebSDK` constructor as flat properties — we group them here for
+   * a cleaner consumer-facing API.
+   */
+  options?: IGenesysIrisOptions;
+}
+
+export interface IGenesysIrisOptions {
+  loggingLevel?: number;
+  audioAnalytics?: boolean;
+  onReady?: () => void;
 }
 
 /**
@@ -35,11 +48,13 @@ export interface IIrisLibraryDefaults {
 
 /**
  * Full resolved configuration used internally by the SDK
- * (consumer config + library defaults).
+ * (consumer config + library defaults + flattened options).
+ * This is the exact shape we hand to `new IrisWebSDK(...)`.
  */
 export interface IIrisConfig
-  extends Omit<IGenesysIrisConfig, 'audioWorkletPath' | 'wasmPath'>,
-    IIrisLibraryDefaults {}
+  extends Omit<IGenesysIrisConfig, 'audioWorkletPath' | 'wasmPath' | 'options'>,
+    IIrisLibraryDefaults,
+    IGenesysIrisOptions {}
 
 /**
  * Default library values.
