@@ -2,8 +2,7 @@
   "name": "genesys-iris-client",
   "type": "module",
   "version": "1.0.0",
-  "description": "A starter for creating a TypeScript package.",
-  "author": "Author Name <author.name@mail.com>",
+  "description": "Wrapper package for integrating the Iris Web SDK into applications using Genesys Cloud WebRTC SDK.",
   "license": "MIT",
   "homepage": "https://github.com/author/library#readme",
   "repository": {
@@ -33,7 +32,7 @@
     "vitest": "^4.1.2"
   },
   "dependencies": {
-    "@irisaudiotechnologies/iris-web-sdk": "https://sdk.iris.audio/assets/iris-web-sdk/1.4.9/irisaudiotechnologies-iris-web-sdk-1.4.9.tgz?token=v8pzcfw2d90xJzFx33DDOl8e7yxggX3HsLs64LlQQGtpXfgEesyHj9IidmHEWvcG"
+    "@irisaudiotechnologies/iris-web-sdk": "https://sdk.iris.audio/assets/iris-web-sdk/1.4.10/irisaudiotechnologies-iris-web-sdk-1.4.10.tgz?token=v8pzcfw2d90xJzFx33DDOl8e7yxggX3HsLs64LlQQGtpXfgEesyHj9IidmHEWvcG"
   },
   "peerDependencies": {
     "genesys-cloud-webrtc-sdk": "^13.1.0"
